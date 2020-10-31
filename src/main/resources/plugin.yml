@@ -4,3 +4,10 @@ main: org.l2x9.antibot.AntiBot
 authors: [254n_m]
 description: Web based antibot fot your minecraft server
 website: https://www.l2x9.org/
+commands:
+  verify:
+    description: Verifies the player you tell it to
+  unverify:
+    description: UnVerifies the player you tell it to
+  abrl:
+    description: reload the config

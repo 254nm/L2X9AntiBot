@@ -4,6 +4,9 @@ import com.sun.net.httpserver.HttpServer;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.l2x9.antibot.commands.ReloadConfig;
+import org.l2x9.antibot.commands.UnVerifyCommand;
+import org.l2x9.antibot.commands.VerifyCommand;
 import org.l2x9.antibot.events.ChatEvent;
 import org.l2x9.antibot.events.CommandEvent;
 import org.l2x9.antibot.events.MoveEvent;
@@ -36,6 +39,9 @@ public final class AntiBot extends JavaPlugin {
 		pluginManager.registerEvents(new CommandEvent(this), this);
 		pluginManager.registerEvents(new MoveEvent(), this);
 		pluginManager.registerEvents(new PlayerJoin(this), this);
+		getCommand("verify").setExecutor(new VerifyCommand());
+		getCommand("unverify").setExecutor(new UnVerifyCommand());
+		getCommand("abrl").setExecutor(new ReloadConfig(this));
 	}
 	@Override
 	public void onDisable() {

@@ -2,7 +2,7 @@
 #Video on how to configure this at
 
 #Secret key
-Secret-Key: "6LeOOPwUAAAAAEkhwIfbyXWmaeTzzC4vyCgzWuus"
+Secret-Key: ""
 #Port the WebServer runs on
 Port: 25594
 #Message to send to the player when they join and are not verified
