@@ -18,7 +18,7 @@ public class UnVerifyCommand implements CommandExecutor {
 					sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&6 Unverified the player &r&6" + target.getName()));
 					Utils.unVerifyPlayer(target);
 				} else {
-					sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&c" + target.getName() + "&r&6 Is not already verified"));
+					sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&c " + target.getName() + "&r&6 Is not already verified"));
 				}
 			} else {
 				sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&4Error&r&cToo few arguments /unverify <playerName>"));

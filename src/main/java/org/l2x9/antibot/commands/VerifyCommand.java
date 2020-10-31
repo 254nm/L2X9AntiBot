@@ -18,7 +18,7 @@ public class VerifyCommand implements CommandExecutor {
 					sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&6 Verified the player &r&6" + target.getName()));
 					Utils.verifyPlayer(target);
 				} else {
-					sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&c" + target.getName() + "&r&6 Is already verified"));
+					sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&3[L2X9AntiBot]&r&c " + target.getName() + "&r&6 Is already verified"));
 				}
 			} else {
 				sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&4Error&r&cToo few arguments /verify <playerName>"));
