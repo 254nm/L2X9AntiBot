@@ -1,0 +1,32 @@
+#Secrete key can be found at https://www.google.com/recaptcha/
+#Video on how to configure this at
+
+#Secret key
+Secret-Key: "6LeOOPwUAAAAAEkhwIfbyXWmaeTzzC4vyCgzWuus"
+#Port the WebServer runs on
+Port: 25594
+#Message to send to the player when they join and are not verified
+Unverified-Message:
+  - "&3[L2X9AntiBot]&r&4 Please verify you are not a bot at&r&a antibot.l2x9.org"
+  - "&3[L2X9AntiBot]&r&4 Verifica que no eres un bot en&r&a antibot.l2x9.org"
+  - "&k-----------------------------------------------------"
+  - "&3[L2X9AntiBot]&r&4 Please verify you are not a bot at&r&a antibot.l2x9.org"
+  - "&3[L2X9AntiBot]&r&4 Verifica que no eres un bot en&r&a antibot.l2x9.org"
+  - "&k-----------------------------------------------------"
+  - "&3[L2X9AntiBot]&r&4 Please verify you are not a bot at&r&a antibot.l2x9.org"
+  - "&3[L2X9AntiBot]&r&4 Verifica que no eres un bot en&r&a antibot.l2x9.org"
+  - "&k-----------------------------------------------------"
+#Kick message for when the player either sits for too long or tries to chat without being verified
+Kick-Message:
+  - "&3[L2X9AntiBot]&r&4 Please verify you are not a bot at&r&a antibot.l2x9.org"
+  - ""
+  - "&3[L2X9AntiBot]&r&4 Verifica que no eres un bot en&r&a antibot.l2x9.org"
+#Options
+#Set true to enable. This option will spam Not-Verified-Message in the chat every one second
+Spam-the-player-to-whitelist: false
+#How long the player has before they get kicked for inactivity in seconds
+Verify-Timeout: 60
+#Action bar message use %time as a place holder for the time
+ActionBar-Message: '&6&lPlease verify at AntiBot.l2x9.org to play&r&b&l L2X9&r&c&l %time%'
+#Message to send to the player when they verify and are online
+Verify-Message: "&3[L2X9AntiBot]&r&4 Verified Successfully"

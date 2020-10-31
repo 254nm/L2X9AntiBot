@@ -1,0 +1,6 @@
+name: L2X9AntiBot
+version: ${project.version}
+main: org.l2x9.antibot.AntiBot
+authors: [254n_m]
+description: Web based antibot fot your minecraft server
+website: https://www.l2x9.org/
