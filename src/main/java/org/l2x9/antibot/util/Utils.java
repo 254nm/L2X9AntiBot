@@ -5,8 +5,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.List;
 
 public class Utils {
@@ -51,5 +50,13 @@ public class Utils {
 	}
 	public static void sendMessage(Player player, String message) {
 		player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+	}
+	public static String toString(InputStream stream) throws IOException {
+		InputStreamReader isr = new InputStreamReader(stream);
+		BufferedReader reader = new BufferedReader(isr);
+		String output = String.join("\n", reader.lines().toArray(String[]::new));
+		isr.close();
+		reader.close();
+		return output;
 	}
 }
